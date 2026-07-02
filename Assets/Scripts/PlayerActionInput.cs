@@ -8,6 +8,7 @@ public class PlayerActionInput : MonoBehaviour
 {
     public event Action OnChangeRoomPressed;
     public event Action OnGetPickupPressed;
+    public event Action OnOpenMenuPressed;
 
     // 由 Input System 自动调用（通过 StarterAssets.inputactions 中的 Invoke Unity Events 绑定）
     public void OnChangeRoom(InputAction.CallbackContext context)
@@ -20,5 +21,12 @@ public class PlayerActionInput : MonoBehaviour
     {
         if (context.performed)
             OnGetPickupPressed?.Invoke();
+    }
+    public void OnOpenMenu(InputAction.CallbackContext context)
+    {
+        if (context.performed)
+        {
+            OnOpenMenuPressed?.Invoke();
+        }
     }
 }

@@ -215,6 +215,7 @@ GameObject:
   - component: {fileID: 7008773502226141854}
   - component: {fileID: 4470870995349646965}
   - component: {fileID: 5350113249853986972}
+  - component: {fileID: 3462843232167665942}
   m_Layer: 8
   m_Name: PlayerCapsule 1
   m_TagString: Player
@@ -452,6 +453,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: 28e1a4d7-609b-4b8b-9f20-489d968dd3b8
     m_ActionName: Player/GetPicup[/Mouse/leftButton]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5350113249853986972}
+        m_TargetAssemblyTypeName: PlayerActionInput, Assembly-CSharp
+        m_MethodName: OnOpenMenu
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: 3977391b-db4d-4e78-9da0-8a13a79f1f5c
+    m_ActionName: Player/GetOpenBagMenu[/Keyboard/tab]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -497,6 +514,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5dddb653dc635b147afb6128e09160bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3462843232167665942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7808392815598180361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e25466571f53ba45add429f01acb8a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &8506150926331341185
