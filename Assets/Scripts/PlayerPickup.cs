@@ -25,6 +25,9 @@ public class PlayerPickup : MonoBehaviour
     private PickupObject currentTarget;  // 当前正在看的可拾取物品
     private PickupObject heldObject;     // 当前手持的物品
 
+    /// <summary>当前手持的物品（只读），供外部（如 PlayerPersistent）传送后瞬移</summary>
+    public PickupObject HeldObject => heldObject;
+
     // ==========  Unity 生命周期  ==========
 
     void Start()
